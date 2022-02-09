@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{EF2C3FB7-AC65-4914-BF82-23127E003DD5}</ProjectGuid>
+    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>CircleTriangleSquer</RootNamespace>
+    <AssemblyName>CircleTriangleSquer</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="NUnit.Framework">
+      <HintPath>$(SharpDevelopBinPath)\Tools\NUnit\NUnit.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AllConstant.cs" />
+    <Compile Include="InputChecer.cs" />
+    <Compile Include="I_shape.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Фигуры\Круг\Circle.cs" />
+    <Compile Include="Фигуры\Круг\Тесты\UTCircleSquare.cs" />
+    <Compile Include="Фигуры\Круг\Тесты\UTNegativEdgeCircle.cs" />
+    <Compile Include="Фигуры\Треугольники\Triangle.cs" />
+    <Compile Include="Фигуры\Треугольники\Тесты\UTIsRigthTriabgle.cs" />
+    <Compile Include="Фигуры\Треугольники\Тесты\UTNegativEdgeTriangle.cs" />
+    <Compile Include="Фигуры\Треугольники\Тесты\UTTriangleSquere.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Фигуры" />
+    <Folder Include="Фигуры\Круг" />
+    <Folder Include="Фигуры\Круг\Тесты" />
+    <Folder Include="Фигуры\Треугольники" />
+    <Folder Include="Фигуры\Треугольники\Тесты" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
