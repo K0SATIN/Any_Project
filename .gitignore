@@ -1,4 +1,5 @@
 CircleTriangleSquer/OpenCover/
 CircleTriangleSquer/obj/
-CircleTriangleSquer/bin/
+CircleTriangleSquer/bin/Debug/*.dll
+CircleTriangleSquer/bin/Debug/*.pdb
 !CircleTriangleSquer/bin/Debug/CircleTriangleSquer.dll
