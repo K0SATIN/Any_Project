@@ -51,20 +51,20 @@
     <Compile Include="InputChecer.cs" />
     <Compile Include="I_shape.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Фигуры\Круг\Circle.cs" />
-    <Compile Include="Фигуры\Круг\Тесты\UTCircleSquare.cs" />
-    <Compile Include="Фигуры\Круг\Тесты\UTNegativEdgeCircle.cs" />
-    <Compile Include="Фигуры\Треугольники\Triangle.cs" />
-    <Compile Include="Фигуры\Треугольники\Тесты\UTIsRigthTriabgle.cs" />
-    <Compile Include="Фигуры\Треугольники\Тесты\UTNegativEdgeTriangle.cs" />
-    <Compile Include="Фигуры\Треугольники\Тесты\UTTriangleSquere.cs" />
+    <Compile Include="Shapes\Circle_Shapes\Circle.cs" />
+    <Compile Include="Shapes\Circle_Shapes\Tests\UTCircleSquare.cs" />
+    <Compile Include="Shapes\Circle_Shapes\Tests\UTNegativEdgeCircle.cs" />
+    <Compile Include="Shapes\Triangle_Shapes\Tests\UTIsRigthTriabgle.cs" />
+    <Compile Include="Shapes\Triangle_Shapes\Tests\UTNegativEdgeTriangle.cs" />
+    <Compile Include="Shapes\Triangle_Shapes\Tests\UTTriangleSquere.cs" />
+    <Compile Include="Shapes\Triangle_Shapes\Triangle.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Фигуры" />
-    <Folder Include="Фигуры\Круг" />
-    <Folder Include="Фигуры\Круг\Тесты" />
-    <Folder Include="Фигуры\Треугольники" />
-    <Folder Include="Фигуры\Треугольники\Тесты" />
+    <Folder Include="Shapes" />
+    <Folder Include="Shapes\Circle_Shapes" />
+    <Folder Include="Shapes\Circle_Shapes\Tests" />
+    <Folder Include="Shapes\Triangle_Shapes" />
+    <Folder Include="Shapes\Triangle_Shapes\Tests" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

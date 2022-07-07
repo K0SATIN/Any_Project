@@ -9,7 +9,7 @@
 using System;
 using NUnit.Framework;
 
-namespace Тестовое_4
+namespace Test_Task.U_tests
 {
 	[TestFixture]
 	public class NegativEdge

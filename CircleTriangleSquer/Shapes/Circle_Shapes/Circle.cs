@@ -8,7 +8,7 @@
  */
 using System;
 
-namespace Тестовое_4
+namespace Test_Task
 {
 	/// <summary>
 	/// Description of Circle.
